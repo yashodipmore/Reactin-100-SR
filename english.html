@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="main-title">Reactin 100 SR</h1>
+        </div>
+    </header>
+    
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <button class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Hamburger Icon -->
+            </button>
+            <ul class="menu" id="menu">
+                <li><a href="#product-introduction">Product Introduction</a></li>
+                <li><a href="#how-to-use-reactin">How to Use Reactin Tablet PR</a></li>
+                <li><a href="#precautions">Precautions</a></li>
+                <li><a href="#common-side-effects">Common Side Effects</a></li>
+                <li><a href="#safety-advice">Safety Advice</a></li>
+                <li><a href="#what-to-do">What to Do</a></li>
+                <li><a href="#what-not-to-do">What Not to Do</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        });
+    </script>
+    
+
+    <!-- Sections -->
+  <!-- Sections -->
+  <section id="product-introduction">
+    <h1>Product Introduction</h1>
+    <p><strong>Generic Name:</strong> Diclofenac 100 mg</p>
+    <p><strong>Category:</strong> NSAID</p>
+    <p><strong>Pharmacological Category:</strong> Cyclooxygenase Inhibitors</p>
+    <p><strong>Therapeutic Indication:</strong> Pain relief</p>
+    <p><strong>Storage:</strong> Keep REACTIN SR 100MG TABLET out of reach of children</p>
+    <p><strong>Store:</strong> REACTIN SR 100MG TABLET below 25°C</p>
+    <p><strong>Marketed by:</strong> Cipla Ltd</p>
+    <p><strong>Country of Origin:</strong> India</p>
+    <p><strong>MRP:</strong> ₹67.65</p>
+    <p>Reactin 100 SR Tablet belongs to a group of medicines called non-steroidal anti-inflammatory drugs (NSAIDs). It is used for short-term relief of pain, inflammation, and swelling in conditions that affect joints and muscles. It works by blocking chemical messengers in the brain that tell us we have pain. It can help relieve pain in conditions like rheumatoid arthritis and osteoarthritis.</p>
+    <!-- Image Carousel -->
+    <div class="image-gallery">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="logo1.jpg" alt="Cough Syrup Bottle 1" class="carousel-img">
+                <img src="logo2.jpg" alt="Cough Syrup Bottle 2" class="carousel-img">
+                <img src="logo3.jpg" alt="Cough Syrup Bottle 3" class="carousel-img">
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+        </div>
+    </div>
+</section>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+let currentIndex = 0;
+
+// Move to the next slide
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+// Move to the previous slide
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+</script>
+    
+
+<section id="how-to-use-reactin">
+    <h2>How to Use Reactin Tablet PR</h2>
+    <ul>
+        <li><strong>Dosage:</strong> Take Reactin Tablet PR exactly as prescribed by your healthcare provider. Do not take more than the recommended dosage.</li>
+        <li>To get the most benefit, take this medication regularly at the same time each day. Do not take more or use it for a longer time than needed, as it can be dangerous.</li>
+        <li>It is generally recommended to take the lowest effective dose for the shortest possible time.</li>
+        <li>Take Reactin Tablet PR with food or milk to prevent stomach upset.</li>
+    </ul>
+</section>
+
+<section id="precautions">
+    <h2>Precautions</h2>
+    <ul>
+        <li>Reactin 100 SR Tablet should be used with precaution in patients with asthma and cardiovascular bleeding.</li>
+        <li>This medicine is contraindicated for the treatment of perioperative pain in the setting of coronary artery bypass graft (CABG) surgery.</li>
+        <li>Pregnant and breastfeeding women should consult their doctors before using this medicine as it may cause harmful effects to the developing baby.</li>
+    </ul>
+</section>
+    
+
+    <section id="common-side-effects">
+        <h1>Common Side Effects</h1>
+        <div class="effects-grid">
+            <div class="effect-card">
+                <img src="1side.jpg" alt="Nausea and Vomiting" class="effect-img">
+                <p>Nausea and Vomiting</p>
+            </div>
+            <div class="effect-card">
+                <img src="2side.jpg" alt="Diarrhoea" class="effect-img">
+                <p>Diarrhoea</p>
+            </div>
+            <div class="effect-card">
+                <img src="3side.jpg" alt="Abdominal Pain" class="effect-img">
+                <p>Abdominal Pain</p>
+            </div>
+            <div class="effect-card">
+                <img src="4side.jpg" alt="Indigestion" class="effect-img">
+                <p>Indigestion</p>
+            </div>
+            <div class="effect-card">
+                <img src="5side.jpg" alt="Flatulence" class="effect-img">
+                <p>Flatulence</p>
+            </div>
+            <div class="effect-card">
+                <img src="6side.jpg" alt="Headache" class="effect-img">
+                <p>Headache</p>
+            </div>
+            <div class="effect-card">
+                <img src="7side.jpg" alt="Dizziness" class="effect-img">
+                <p>Dizziness</p>
+            </div>
+            <div class="effect-card">
+                <img src="8side.jpg" alt="Decreased Appetite" class="effect-img">
+                <p>Decreased Appetite</p>
+            </div>
+            <div class="effect-card">
+                <img src="9side.jpg" alt="Vertigo" class="effect-img">
+                <p>Vertigo</p>
+            </div>
+            <div class="effect-card">
+                <img src="10side.jpg" alt="Rash" class="effect-img">
+                <p>Rash</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="safety-advice">
+        <h1>Safety Advice</h1>
+        <div class="safety-grid">
+            <!-- Alcohol Advice -->
+            <div class="safety-card">
+                <img src="safe1.jpg" alt="Alcohol Warning" class="safety-img">
+                <div class="safety-info">
+                    <h2>Alcohol</h2>
+                    <p>It is unsafe to consume alcohol with Reactin 100 SR Tablet.</p>
+                </div>
+            </div>
+    
+            <!-- Pregnancy Advice -->
+            <div class="safety-card">
+                <img src="safe2.jpg" alt="Pregnancy Warning" class="safety-img">
+                <div class="safety-info">
+                    <h2>Pregnancy</h2>
+                    <p>Consult your doctor before taking Reactin 100 SR Tablet if you are pregnant.</p>
+                </div>
+            </div>
+            
+            <!-- Additional safety advice cards can go here -->
+        </div>
+    </section>
+    <section id="safety-advice">
+        
+        <div class="advice-grid">
+            <div class="advice-card">
+                <img src="breast.jpg" alt="Pregnancy Safety" class="advice-img">
+                <h2>Consult Your Doctor</h2><h3>Breast feeding</h3>
+                <p>Reactin 100 SR Tablet is unsafe to use during pregnancy as there is definite evidence of risk to the developing baby. However, the doctor may rarely prescribe it in some life-threatening situations if the benefits are more than the potential risks. Please consult your doctor.</p>
+            </div>
+    
+    
+            <div class="advice-card">
+                <img src="driving.jpg" alt="Driving Safety" class="advice-img">
+                <h3>Driving<h3><h2>Unsafe</h2>
+                <p>Reactin 100 SR Tablet may cause side effects which could affect your ability to drive. It may cause headaches, blurred vision, dizziness, or drowsiness in some patients. This may affect your ability to drive.</p>
+            </div>
+    
+            <div class="advice-card">
+                <img src="kidney.jpg" alt="Kidney Safety" class="advice-img">
+                <h3>Kidney<h3><h2>Caution</h2>
+                <p>Reactin 100 SR Tablet should be used with caution in patients with kidney disease. Dose adjustment of Reactin 100 SR Tablet may be needed. Please consult your doctor.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="what-to-do">
+        <h1>Do's</h1>
+        <ul>
+            <li>Inform your doctor if you have any history of heart disease or stroke.</li>
+            <li>Pregnant and breastfeeding women should consult their doctors before using this medicine</li>
+            <li>Inform your doctor if you have liver or kidney disease, are pregnant, or breastfeeding.</li>
+            <li>If you miss a dose of Reactin 100 SR Tablet, take it as soon as possible. However, if it is almost time for your next dose, skip the missed dose and go back to your regular schedule. </li>
+            <li>It may cause dizziness, drowsiness or visual disturbances. Use caution while driving or doing anything that requires concentration.</li>
+            <li>Consult your doctor if the common side effects persist or if you’re worried about them</li>
+        </ul>
+    </section>
+    
+    <section id="what-not-to-do">
+        <h1>Do'ts</h1>
+        <ul>
+            <li>Do not take more or longer than needed as that can be dangerous</li>
+            <li>Do not double the dose in case if you miss one.</li>
+            <li>Do not alcohol while taking Reactin 100 SR Tablet as it can cause excessive drowsiness and increase your risk of stomach problems.</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Yashodip More - NonCSCoder. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for scroll animations
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+    </script>
+
+</body>
+</html>

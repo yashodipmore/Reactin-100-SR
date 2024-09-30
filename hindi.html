@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="main-title">रिएक्टिन 100 SR</h1>
+        </div>
+    </header>
+    
+    
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <button class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- हैमबर्गर आइकन -->
+            </button>
+            <ul class="menu" id="menu">
+                <li><a href="#product-introduction">उत्पाद का परिचय</a></li>
+                <li><a href="#benefits">लाभ</a></li>
+                <li><a href="#when-to-take">कब लेना है</a></li>
+                <li><a href="#how-to-take">कैसे लेना है</a></li>
+                <li><a href="#common-side-effects">सामान्य दुष्प्रभाव</a></li>
+                <li><a href="#when-to-avoid">कब से बचें</a></li>
+                <li><a href="#what-to-do">क्या करें</a></li>
+                <li><a href="#what-not-to-do">क्या न करें</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        });
+    </script>
+    
+
+    <!-- Sections -->
+  <!-- Sections -->
+  <section id="product-introduction">
+    <h1>उत्पाद का परिचय</h1>
+    <p><strong>जेनेरिक नाम:</strong> डाइक्लोफेनैक 100 मिग्रा</p>
+    <p><strong>श्रेणी:</strong> NSAID</p>
+    <p><strong>फार्माकोलॉजिकल श्रेणी:</strong> साइक्लोऑक्सीजनेज इनहिबिटर्स</p>
+    <p><strong>चिकित्सीय संकेत:</strong> दर्द निवारण</p>
+    <p><strong>भंडारण:</strong> REACTIN SR 100MG TABLET को बच्चों की पहुंच से दूर रखें</p>
+    <p><strong>संग्रहित करें:</strong> REACTIN SR 100MG TABLET को 25°C से नीचे रखें</p>
+    <p><strong>बाज़ार में उपलब्ध है:</strong> सिप्ला लिमिटेड</p>
+    <p><strong>उत्पत्ति देश:</strong> भारत</p>
+    <p><strong>MRP:</strong> ₹67.65</p>
+    <p>Reactin 100 SR Tablet नॉन-स्टेरॉइडल एंटी-इंफ्लेमेटरी ड्रग्स (NSAIDs) की एक श्रेणी में आती है। इसका उपयोग जोड़ों और मांसपेशियों को प्रभावित करने वाली स्थितियों में दर्द, सूजन और सूजन के लिए तात्कालिक राहत के लिए किया जाता है। यह मस्तिष्क में उन रासायनिक संदेशवाहकों को रोककर काम करता है जो हमें बताते हैं कि हमें दर्द हो रहा है। यह रुमेटाइड आर्थराइटिस और ऑस्टियोआर्थराइटिस जैसी स्थितियों में दर्द को कम करने में मदद कर सकता है।</p>
+    <!-- छवि कैरोसेल -->
+
+    <div class="image-gallery">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="logo1.jpg" alt="Cough Syrup Bottle 1" class="carousel-img">
+                <img src="logo2.jpg" alt="Cough Syrup Bottle 2" class="carousel-img">
+                <img src="logo3.jpg" alt="Cough Syrup Bottle 3" class="carousel-img">
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+        </div>
+    </div>
+</section>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+let currentIndex = 0;
+
+// Move to the next slide
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+// Move to the previous slide
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+</script>
+    
+
+<section id="how-to-use-reactin">
+    <h2>Reactin Tablet PR का उपयोग कैसे करें</h2>
+    <ul>
+        <li><strong>डोज़:</strong> Reactin Tablet PR को अपने स्वास्थ्य सेवा प्रदाता द्वारा निर्धारित मात्रा में ही लें। अनुशंसित डोज़ से अधिक न लें।</li>
+        <li>इस दवा का अधिकतम लाभ पाने के लिए इसे हर दिन एक ही समय पर नियमित रूप से लें। जरूरत से ज्यादा न लें या इसे अधिक समय तक उपयोग न करें, क्योंकि यह खतरनाक हो सकता है।</li>
+        <li>आमतौर पर, सबसे कम प्रभावी डोज़ को सबसे कम समय के लिए लेने की सिफारिश की जाती है।</li>
+        <li>Reactin Tablet PR को भोजन या दूध के साथ लें ताकि पेट में परेशानी न हो।</li>
+    </ul>
+</section>
+
+<section id="precautions">
+    <h2>सावधानियां</h2>
+    <ul>
+        <li>Reactin 100 SR Tablet का उपयोग अस्थमा और हृदयवाहिकीय रक्तस्राव वाले रोगियों में सावधानी के साथ किया जाना चाहिए।</li>
+        <li>यह दवा कोरोनरी आर्टरी बाईपास ग्राफ्ट (CABG) सर्जरी के सेटिंग में पूर्व-शल्य चिकित्सा दर्द के इलाज के लिए निषेध है।</li>
+        <li>गर्भवती और स्तनपान कराने वाली महिलाओं को इस दवा का उपयोग करने से पहले अपने डॉक्टर से परामर्श करना चाहिए क्योंकि यह विकसित हो रहे बच्चे को हानिकारक प्रभाव डाल सकती है।</li>
+    </ul>
+</section>
+
+
+<section id="common-side-effects">
+    <h1>सामान्य दुष्प्रभाव</h1>
+    <div class="effects-grid">
+        <div class="effect-card">
+            <img src="1side.jpg" alt="मतली और उल्टी" class="effect-img">
+            <p>मतली और उल्टी</p>
+        </div>
+        <div class="effect-card">
+            <img src="2side.jpg" alt="दस्त" class="effect-img">
+            <p>दस्त</p>
+        </div>
+        <div class="effect-card">
+            <img src="3side.jpg" alt="पेट दर्द" class="effect-img">
+            <p>पेट दर्द</p>
+        </div>
+        <div class="effect-card">
+            <img src="4side.jpg" alt="पाचन में कठिनाई" class="effect-img">
+            <p>पाचन में कठिनाई</p>
+        </div>
+        <div class="effect-card">
+            <img src="5side.jpg" alt="गैस" class="effect-img">
+            <p>गैस</p>
+        </div>
+        <div class="effect-card">
+            <img src="6side.jpg" alt="सिरदर्द" class="effect-img">
+            <p>सिरदर्द</p>
+        </div>
+        <div class="effect-card">
+            <img src="7side.jpg" alt="चक्कर आना" class="effect-img">
+            <p>चक्कर आना</p>
+        </div>
+        <div class="effect-card">
+            <img src="8side.jpg" alt="भूख में कमी" class="effect-img">
+            <p>भूख में कमी</p>
+        </div>
+        <div class="effect-card">
+            <img src="9side.jpg" alt="चक्कर" class="effect-img">
+            <p>चक्कर</p>
+        </div>
+        <div class="effect-card">
+            <img src="10side.jpg" alt="रैश" class="effect-img">
+            <p>रैश</p>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="safety-advice">
+        <h1>सुरक्षा सलाह</h1>
+        <div class="safety-grid">
+            <!-- शराब सलाह -->
+            <div class="safety-card">
+                <img src="safe1.jpg" alt="शराब चेतावनी" class="safety-img">
+                <div class="safety-info">
+                    <h2>शराब</h2>
+                    <p>Reactin 100 SR Tablet के साथ शराब का सेवन करना असुरक्षित है।</p>
+                </div>
+            </div>
+    
+            <!-- गर्भावस्था सलाह -->
+            <div class="safety-card">
+                <img src="safe2.jpg" alt="गर्भावस्था चेतावनी" class="safety-img">
+                <div class="safety-info">
+                    <h2>गर्भावस्था</h2>
+                    <p>यदि आप गर्भवती हैं, तो Reactin 100 SR Tablet लेने से पहले अपने डॉक्टर से परामर्श करें।</p>
+                </div>
+            </div>
+    
+            <!-- अतिरिक्त सुरक्षा सलाह कार्ड यहां जा सकते हैं -->
+        </div>
+    </section>
+    
+    <section id="safety-advice">
+        
+        <div class="advice-grid">
+            <div class="advice-card">
+                <img src="breast.jpg" alt="गर्भावस्था सुरक्षा" class="advice-img">
+                <h2>अपने डॉक्टर से परामर्श करें</h2>
+                <h3>स्तनपान</h3>
+                <p>Reactin 100 SR Tablet का गर्भावस्था के दौरान उपयोग करना असुरक्षित है क्योंकि विकसित बच्चे को खतरे के स्पष्ट प्रमाण हैं। हालांकि, डॉक्टर इसे कुछ जानलेवा परिस्थितियों में बहुत कम ही प्रिस्क्राइब कर सकते हैं, यदि लाभ संभावित खतरों से अधिक हो। कृपया अपने डॉक्टर से परामर्श करें।</p>
+            </div>
+            
+            <div class="advice-card">
+                <img src="driving.jpg" alt="ड्राइविंग सुरक्षा" class="advice-img">
+                <h3>ड्राइविंग</h3>
+                <h2>असुरक्षित</h2>
+                <p>Reactin 100 SR Tablet कुछ मरीजों में सिरदर्द, धुंधली दृष्टि, चक्कर या नींद का कारण बन सकता है। इससे आपकी ड्राइविंग क्षमता प्रभावित हो सकती है।</p>
+            </div>
+        
+            <div class="advice-card">
+                <img src="kidney.jpg" alt="किडनी सुरक्षा" class="advice-img">
+                <h3>किडनी</h3>
+                <h2>सावधानी</h2>
+                <p>Reactin 100 SR Tablet को किडनी रोग वाले मरीजों में सावधानी के साथ उपयोग किया जाना चाहिए। Reactin 100 SR Tablet की खुराक समायोजन की आवश्यकता हो सकती है। कृपया अपने डॉक्टर से परामर्श करें।</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="what-to-do">
+        <h1>क्या करें</h1>
+        <ul>
+            <li>यदि आपको हृदय रोग या स्ट्रोक का कोई इतिहास है तो अपने डॉक्टर को बताएं।</li>
+            <li>गर्भवती और स्तनपान कराने वाली महिलाओं को इस दवा का उपयोग करने से पहले अपने डॉक्टर से परामर्श करना चाहिए।</li>
+            <li>यदि आपको जिगर या किडनी की बीमारी है, गर्भवती हैं या स्तनपान करवा रही हैं तो अपने डॉक्टर को सूचित करें।</li>
+            <li>यदि आप Reactin 100 SR Tablet की एक खुराक लेना भूल गए हैं, तो इसे जल्द से जल्द लें। हालांकि, यदि आपकी अगली खुराक का समय लगभग आ गया है, तो भूल गई खुराक को छोड़ दें और अपने नियमित शेड्यूल पर वापस लौटें।</li>
+            <li>यह चक्कर, नींद या दृष्टि में परिवर्तन कर सकता है। गाड़ी चलाते समय या किसी भी ध्यान केंद्रित करने वाली गतिविधि करते समय सावधानी बरतें।</li>
+            <li>यदि सामान्य दुष्प्रभाव जारी रहें या यदि आप उनके बारे में चिंतित हैं, तो अपने डॉक्टर से परामर्श करें।</li>
+        </ul>
+    </section>
+    
+    <section id="what-not-to-do">
+        <h1>क्या न करें</h1>
+        <ul>
+            <li>जितना आवश्यक हो उससे अधिक या लंबे समय तक न लें क्योंकि यह खतरनाक हो सकता है।</li>
+            <li>यदि आप एक खुराक भूल गए हैं तो उसे दोगुना न करें।</li>
+            <li>Reactin 100 SR Tablet लेते समय शराब का सेवन न करें क्योंकि इससे अत्यधिक नींद आ सकती है और पेट की समस्याओं का जोखिम बढ़ सकता है।</li>
+        </ul>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Yashodip More - NonCSCoder. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for scroll animations
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+    </script>
+
+</body>
+</html>

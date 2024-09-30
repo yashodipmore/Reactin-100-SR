@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="main-title">Reactin 100 SR</h1>
+        </div>
+    </header>
+    
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <button class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- હેમ્બર્ગર આઇકન -->
+            </button>
+            <ul class="menu" id="menu">
+                <li><a href="#product-introduction">પ્રોડક્ટ પરિચય</a></li>
+                <li><a href="#how-to-use-reactin">Reactin Tablet PR કેવી રીતે ઉપયોગ કરવો</a></li>
+                <li><a href="#precautions">જાહેરાતો</a></li>
+                <li><a href="#common-side-effects">સામાન્ય સાઇડ ઇફેક્ટ્સ</a></li>
+                <li><a href="#safety-advice">સુરક્ષા સલાહ</a></li>
+                <li><a href="#what-to-do">શું કરવું</a></li>
+                <li><a href="#what-not-to-do">શું ન કરવું</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        });
+    </script>
+    
+
+    <!-- Sections -->
+  <!-- Sections -->
+  <section id="product-introduction">
+    <h1>પ્રોડક્ટ પરિચય</h1>
+    <p><strong>જનરિક નામ:</strong> Diclofenac 100 mg</p>
+    <p><strong>શ્રેણી:</strong> NSAID</p>
+    <p><strong>ફાર્માકોલોજીકલ શ્રેણી:</strong> સાયક્લોઑક્સિજનેઝ ઇનહિબિટર્સ</p>
+    <p><strong>ચિકિત્સાત્મક સંકેત:</strong> દુખાવો નિવારણ</p>
+    <p><strong>સંગ્રહ:</strong> REACTIN SR 100MG TABLET બાળકોની પહોંચની અંદર રાખો</p>
+    <p><strong>સંગ્રહ કરવા માટે:</strong> REACTIN SR 100MG TABLET 25°Cથી નીચે રાખો</p>
+    <p><strong>વિપણનકર્તા:</strong> Cipla Ltd</p>
+    <p><strong>ઉત્પાદનનો દેશ:</strong> ભારત</p>
+    <p><strong>MRP:</strong> ₹67.65</p>
+    <p>Reactin 100 SR Tablet નોન-સ્ટેરોઇડલ એન્ટી-ઇન્ફ્લેમેટરી ડ્રગ્સ (NSAIDs)ના ગ્રૂપમાં આવે છે. તેને સંધિ અને પેશીઓના દુખાવા, જળસંચય અને સોજાના તાત્કાલિક નિવારણ માટે ઉપયોગમાં લેવાય છે. તે દુખાવાની સૂચના આપતી રાસાયણિક સંદેશકને અવરોધિત કરીને કાર્ય કરે છે. તે રેઉમેટોઈડ આર્થ્રાઇટિસ અને ઓસ્ટિઓઆર્થ્રાઇટિસ જેવી પરિસ્થિતિઓમાં દુખાવો નિવારણમાં મદદ કરે છે.</p>
+
+    <div class="image-gallery">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="logo1.jpg" alt="Cough Syrup Bottle 1" class="carousel-img">
+                <img src="logo2.jpg" alt="Cough Syrup Bottle 2" class="carousel-img">
+                <img src="logo3.jpg" alt="Cough Syrup Bottle 3" class="carousel-img">
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+        </div>
+    </div>
+</section>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+let currentIndex = 0;
+
+// Move to the next slide
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+// Move to the previous slide
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+</script>
+    
+
+<li>Take Reactin Tablet PR with food or milk to prevent stomach upset.</li>
+
+
+<section id="precautions">
+    <h2>જાહેરાતો</h2>
+    <ul>
+        <li>Reactin 100 SR Tabletના ઉપયોગ દરમિયાન આસ્મા અને હૃદયને લગતી બ્લીડિંગ ધરાવતા દર્દીઓમાં ચકાસણી સાથે જ જોઈએ.</li>
+        <li>આ દવા કોરોના આર્થરી બાયપાસ ગ્રાફ (CABG) સર્જરીની સ્થિતીમાં પેરિઓપરેટિવ પેઇનના સારવાર માટે પ્રતિબંધિત છે.</li>
+        <li>ગર્ભવતી અને દૂધ પિલાવતા મહિલાઓએ આ દવા લેતા પહેલા તેમના ડોક્ટર સાથે ચર્ચા કરવી જોઈએ કારણ કે તે વિકાસ પામતા બાળક માટે નુકસાનકારક અસર કરી શકે છે.</li>
+    </ul>
+</section>
+
+    
+
+    <section id="common-side-effects">
+        <h1>સામાન્ય સાઇડ ઇફેક્ટ્સ</h1>
+        <div class="effects-grid">
+            <div class="effect-card">
+                <img src="1side.jpg" alt="Nausea and Vomiting" class="effect-img">
+                <p>ઉલટી અને ઉલટી</p>
+            </div>
+            <div class="effect-card">
+                <img src="2side.jpg" alt="Diarrhoea" class="effect-img">
+                <p>ડાયરીયા</p>
+            </div>
+            <div class="effect-card">
+                <img src="3side.jpg" alt="Abdominal Pain" class="effect-img">
+                <p>પેટમાં દુખાવો</p>
+            </div>
+            <div class="effect-card">
+                <img src="4side.jpg" alt="Indigestion" class="effect-img">
+                <p>અજિરસ</p>
+            </div>
+            <div class="effect-card">
+                <img src="5side.jpg" alt="Flatulence" class="effect-img">
+                <p>ગેસ</p>
+            </div>
+            <div class="effect-card">
+                <img src="6side.jpg" alt="Headache" class="effect-img">
+                <p>મથક દુખાવો</p>
+            </div>
+            <div class="effect-card">
+                <img src="7side.jpg" alt="Dizziness" class="effect-img">
+                <p>ચક્કર આવવો</p>
+            </div>
+            <div class="effect-card">
+                <img src="8side.jpg" alt="Decreased Appetite" class="effect-img">
+                <p>ભુખમાં ઘટાડો</p>
+            </div>
+            <div class="effect-card">
+                <img src="9side.jpg" alt="Vertigo" class="effect-img">
+                <p>વર્ટિગો</p>
+            </div>
+            <div class="effect-card">
+                <img src="10side.jpg" alt="Rash" class="effect-img">
+                <p>રશ</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="safety-advice">
+        <h1>સુરક્ષા સલાહ</h1>
+        <div class="safety-grid">
+            <!-- મદ્યપાનની સલાહ -->
+            <div class="safety-card">
+                <img src="safe1.jpg" alt="મદ્યપાનની ચેતવણી" class="safety-img">
+                <div class="safety-info">
+                    <h2>મદ્યપાન</h2>
+                    <p>Reactin 100 SR Tablet સાથે મદ્યપાન લેવું અપ્રવૃત્ત છે.</p>
+                </div>
+            </div>
+    
+            <!-- ગર્ભાવસ્થા સલાહ -->
+            <div class="safety-card">
+                <img src="safe2.jpg" alt="ગર્ભાવસ્થા ચેતવણી" class="safety-img">
+                <div class="safety-info">
+                    <h2>ગર્ભાવસ્થા</h2>
+                    <p>તમે ગર્ભવતી હોવ ત્યારે Reactin 100 SR Tablet લેતા પહેલા તમારા ડોક્ટર સાથે ચર્ચા કરો.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="safety-advice">
+        <div class="advice-grid">
+            <div class="advice-card">
+                <img src="breast.jpg" alt="ગર્ભાવસ્થા સલામતી" class="advice-img">
+                <h2>તમારા ડોક્ટર સાથે ચર્ચા કરો</h2>
+                <h3>દૂધ પિલાવવું</h3>
+                <p>Reactin 100 SR Tablet ગર્ભાવસ્થામાં ઉપયોગ માટે અસુરક્ષિત છે કારણ કે વિકાસ પામતા બાળક માટે જોખમની સ્પષ્ટ પુરાવા છે. પરંતુ ડોક્ટર ક્યારેક આ દવાની નિર્દેશ કરતું હોય શકે છે જો ફાયદા નુકસાન કરતાં વધુ હોય. કૃપા કરીને તમારા ડોક્ટર સાથે ચર્ચા કરો.</p>
+            </div>
+    
+            <div class="advice-card">
+                <img src="driving.jpg" alt="ચાલાવવાની સલામતી" class="advice-img">
+                <h3>ચાલવાં<h3>
+                <h2>અસુરક્ષિત</h2>
+                <p>Reactin 100 SR Tablet તરફથી કેટલીક સાઇડ ઇફેક્ટ્સ થાય છે જે તમારી ચાલવાની ક્ષમતા ઉપર અસર કરી શકે છે. કેટલીક દર્દીઓમાં આ головная боль, ચમકતી દૃષ્ટિ, ચક્કર આવવો અથવા ઊંઘ આડે છે, જે તમારી ચાલવાની ક્ષમતા ઉપર અસર કરે છે.</p>
+            </div>
+    
+            <div class="advice-card">
+                <img src="kidney.jpg" alt="કિડની સલામતી" class="advice-img">
+                <h3>કિડની<h3>
+                <h2>સાવચેતી</h2>
+                <p>Reactin 100 SR Tablet કિડનીની બીમારી ધરાવતા દર્દીઓમાં સાવચેતી સાથે ઉપયોગ કરવો જોઈએ. Reactin 100 SR Tablet ની ડોઝમાં સુધારાની જરૂર પડી શકે છે. કૃપા કરીને તમારા ડોક્ટર સાથે ચર્ચા કરો.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="what-to-do">
+        <h1>શું કરવું</h1>
+        <ul>
+            <li>જો તમને હાર્ટની બીમારી કે સ્ટ્રોકનો કોઇ ઇતિહાસ હોય તો તમારા ડોક્ટરને જાણ કરો.</li>
+            <li>ગર્ભવતી અને દૂધ પિલાવતી મહિલાઓને આ દવા ઉપયોગ કરવા પહેલાં તેમના ડોક્ટર સાથે ચર્ચા કરવી જોઈએ.</li>
+            <li>જો તમને જિગર અથવા કિડનીની બીમારી હોય, ગર્ભવતી હો અથવા દૂધ પિલાવી રહ્યાં હો તો તમારા ડોક્ટરને જાણ કરો.</li>
+            <li>જો તમે Reactin 100 SR Tablet ની એક ડોઝ ચૂકી ગયા છો, તો તેને તાત્કાલિક લો. જો તમારી આગળની ડોઝનો સમય આવી ગયો છે, તો ચૂકી ગયેલી ડોઝને છોડી દો અને તમારા નિયમિત શેડ્યૂલ પર પાછા જાઓ.</li>
+            <li>આ ઊંઘની ક્ષમતા, ચક્કર આવવો અથવા દૃષ્ટિમાં વિક્ષેપ સર્જી શકે છે. વાહન ચલાવતા અથવા ધ્યાન કેન્દ્રિત કરવાની જરૂર હોય તેવા કોઈ પણ કાર્ય કરતી વખતે સાવચેત રહો.</li>
+            <li>જો સામાન્ય સાઇડ ઇફેક્ટ્સ ચાલુ રહે અથવા તમે તેમને લઈને ચિંતિત હો, તો તમારા ડોક્ટર સાથે ચર્ચા કરો.</li>
+        </ul>
+    </section>
+    
+    <section id="what-not-to-do">
+        <h1>શું ન કરવું</h1>
+        <ul>
+            <li>જરૂર કરતાં વધુ અથવા લાંબો સમય ન લો, કારણ કે તે ખતરનાક હોઈ શકે છે.</li>
+            <li>જો તમે એક ડોઝ ચૂકી ગયા છો તો તેને દબલ ન કરો.</li>
+            <li>Reactin 100 SR Tablet लेते समय शराब का सेवन न करें क्योंकि इससे अत्यधिक नींद आ सकती है और पेट की समस्याओं का जोखिम बढ़ सकता है.</li>
+        </ul>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Yashodip More - NonCSCoder. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for scroll animations
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+    </script>
+
+</body>
+</html>

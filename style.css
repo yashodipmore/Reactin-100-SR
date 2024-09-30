@@ -1,0 +1,717 @@
+/* Reset and Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Makes sure the background covers the entire page */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-position: center; /* Centers the background image */
+}
+
+
+/* Navbar Styles */
+/* Basic navbar styling */
+/* General navbar styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li {
+    padding: 14px 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Hamburger button for mobile view */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+}
+
+
+/* Section Styles */
+section {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p, section ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.section-img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .section-img {
+        width: 100%;
+    }
+}
+
+/* General Styling */
+#product-introduction {
+    padding: 40px 20px;
+    background-color: #f4f7fc;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+#product-introduction h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#product-introduction p, ul {
+    font-size: 16px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    margin: 10px 0;
+}
+
+/* Carousel Container */
+.image-gallery {
+    position: relative;
+    max-width: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-img {
+    width: 300px;  /* Adjust this to change the width */
+    height: 300px; /* Adjust this to change the height */
+    object-fit: cover; /* Ensures image maintains its proportions within the defined size */
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Optional: Add a hover effect for animation */
+}
+
+.carousel-img:hover {
+    transform: scale(1.05); /* Optional: Image slightly enlarges on hover */
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controls span:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #product-introduction h1 {
+        font-size: 26px;
+    }
+    
+    #product-introduction p, ul {
+        font-size: 14px;
+    }
+
+    .carousel-controls span {
+        font-size: 25px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #product-introduction {
+        padding: 20px 10px;
+    }
+
+    .carousel-img {
+        height: auto;
+        min-width: 100%;
+    }
+    
+    .carousel-controls span {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+/* General Section Styling */
+
+
+ /* Section Styling */
+/* Side Effects Section */
+/* Common Side Effects Section */
+#common-side-effects {
+    padding: 40px 20px;
+    background-color: #f2f8ff;  /* Light blue for a calming theme */
+    border-radius: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#common-side-effects h1 {
+    font-size: 32px;
+    color: #0056b3; /* Darker blue for headings */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Grid Layout for Common Side Effects */
+.effects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styling */
+.effect-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.effect-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.effect-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text Styling */
+.effect-card p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    #common-side-effects h1 {
+        font-size: 28px;
+    }
+
+    .effect-card p {
+        font-size: 14px;
+    }
+}
+
+/* Safety Advice Section */
+#safety-advice {
+    padding: 40px 20px;
+    background-color: #f0f8ff;  /* Light color for safety theme */
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#safety-advice h1 {
+    font-size: 32px;
+    color: #007acc; /* Blue theme for headings */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Grid Layout for Safety Advice */
+.safety-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styling */
+.safety-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.safety-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.safety-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    border-bottom: 3px solid #007acc;
+}
+
+.safety-card:hover .safety-img {
+    opacity: 0.9;
+}
+
+/* Text Styling */
+.safety-info {
+    padding: 15px;
+}
+
+.safety-info h2 {
+    font-size: 20px;
+    color: #007acc;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.safety-info p {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .safety-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    #safety-advice h1 {
+        font-size: 28px;
+    }
+
+    .safety-info h2 {
+        font-size: 18px;
+    }
+
+    .safety-info p {
+        font-size: 14px;
+    }
+}
+
+/* Safety Advice Section */
+#safety-advice {
+    padding: 40px 20px;
+    background-color: #f9f9f9;  /* Light grey for a neutral theme */
+    border-radius: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#safety-advice h1 {
+    font-size: 32px;
+    color: #007acc; /* Blue theme for headings */
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Grid Layout for Safety Advice */
+.advice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styling */
+.advice-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+}
+
+.advice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.advice-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Text Styling */
+.advice-card h2 {
+    font-size: 24px;
+    color: #d9534f; /* Red for emphasis */
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.advice-card p {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    #safety-advice h1 {
+        font-size: 28px;
+    }
+
+    .advice-card h2 {
+        font-size: 22px;
+    }
+
+    .advice-card p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+#what-to-do, #what-not-to-do {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#what-to-do h1, #what-not-to-do h1 {
+    font-size: 32px;
+    color: #2c3e50; /* Dark color for headings */
+    margin-bottom: 15px;
+    text-align: center; /* Center align headings */
+}
+
+#what-to-do ul, #what-not-to-do ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#what-to-do li, #what-not-to-do li {
+    margin-bottom: 15px;
+    font-size: 18px; /* Font size for list items */
+    color: #34495e; /* Dark gray color for text */
+}
+
+#what-to-do strong, #what-not-to-do strong {
+    color: #2980b9; /* Color for the strong text */
+}
+
+@media (max-width: 600px) {
+    #what-to-do h1, #what-not-to-do h1 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+    }
+
+    #what-to-do li, #what-not-to-do li {
+        font-size: 16px; /* Adjust font size for list items on small screens */
+    }
+}
+
+footer {
+    background-color: #34495e; /* Dark gray background */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding above and below */
+    position: relative; /* Positioning for any future adjustments */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above the footer */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size for copyright text */
+}
+
+@media (max-width: 600px) {
+    footer p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styling for the header */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffcd7d, #e4db34);
+    color: white;
+    text-align: center;
+    border-radius: 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    animation: shimmer 5s infinite linear;
+}
+
+/* Animation effect for shimmer */
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Main Title */
+.main-title {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #0000003c, #142425, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* Gradient animation for text */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* Reactive starts header */
+
+/* Styling for #how-to-use-reactin section */
+#how-to-use-reactin {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #e9f7ff; /* Light blue background for distinction */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #how-to-use-reactin h2 {
+    font-size: 1.8em;
+    color: #007acc; /* Dark blue heading */
+    margin-bottom: 15px;
+  }
+  
+  #how-to-use-reactin p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  #how-to-use-reactin p strong {
+    color: #005b99; /* Emphasized strong text */
+  }
+  
+  /* Styling for #precautions section */
+  #precautions {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff4e5; /* Light orange background for distinction */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #precautions h2 {
+    font-size: 1.8em;
+    color: #cc7a00; /* Dark orange heading */
+    margin-bottom: 15px;
+  }
+  
+  #precautions p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  #precautions p strong {
+    color: #b35900; /* Emphasized strong text */
+  }
+  
+  /* Responsive layout for both sections */
+  @media screen and (max-width: 768px) {
+    #how-to-use-reactin, #precautions {
+      padding: 15px;
+      margin: 15px 0;
+    }
+  
+    #how-to-use-reactin h2, #precautions h2 {
+      font-size: 1.6em;
+    }
+  
+    #how-to-use-reactin p, #precautions p {
+      font-size: 0.95em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #how-to-use-reactin, #precautions {
+      padding: 10px;
+      margin: 10px 0;
+    }
+  
+    #how-to-use-reactin h2, #precautions h2 {
+      font-size: 1.4em;
+    }
+  
+    #how-to-use-reactin p, #precautions p {
+      font-size: 0.9em;
+    }
+  }
+  

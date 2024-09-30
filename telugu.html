@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Reactin 100 SR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="main-title">Reactin 100 SR</h1>
+        </div>
+    </header>
+    
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <button class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- హాంబర్గర్ ఐకాన్ -->
+            </button>
+            <ul class="menu" id="menu">
+                <li><a href="#product-introduction">ఉత్పత్తి పరిచయం</a></li>
+                <li><a href="#benefits">ప్రయోజనాలు</a></li>
+                <li><a href="#when-to-take">ఎప్పుడు తీసుకోవాలి</a></li>
+                <li><a href="#how-to-take">ఎలా తీసుకోవాలి</a></li>
+                <li><a href="#common-side-effects">సాధారణ దుష్ప్రభావాలు</a></li>
+                <li><a href="#when-to-avoid">ఎప్పుడు మానుకోవాలి</a></li>
+                <li><a href="#what-to-do">ఏం చేయాలి</a></li>
+                <li><a href="#what-not-to-do">ఏం చేయవద్దు</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        });
+    </script>
+    
+
+    <!-- Sections -->
+  <!-- Sections -->
+  <section id="product-introduction">
+    <h1>ఉత్పత్తి పరిచయం</h1>
+    <p><strong>సాధారణ పేరు:</strong> డిక్లోఫెనాక్ 100 మి.గ్రా</p>
+    <p><strong>వర్గం:</strong> NSAID</p>
+    <p><strong>ఫార్మకోలాజికల్ వర్గం:</strong> సైక్లోఓక్సీజనేజ్ నిరోధకులు</p>
+    <p><strong>థెరపీటిక్ సూచన:</strong> నొప్పి నివారణ</p>
+    <p><strong>సంరక్షణ:</strong> REACTIN SR 100MG TABLETను పిల్లల చేతికి చేరకుండా ఉంచండి</p>
+    <p><strong>సంరక్షణా ఉష్ణోగ్రత:</strong> REACTIN SR 100MG TABLETను 25°C కంటే తక్కువ ఉష్ణోగ్రతలో ఉంచండి</p>
+    <p><strong>మార్కెట్ చేసే సంస్థ:</strong> సిప్లా లిమిటెడ్</p>
+    <p><strong>ఉత్పత్తి దేశం:</strong> భారత్</p>
+    <p><strong>MRP:</strong> ₹67.65</p>
+    <p>రియాక్టిన్ 100 SR టాబ్లెట్ అనేది నాన్-స్టెరాయిడల్ యాంటీ-ఇన్ఫ్లమేటరీ డ్రగ్స్ (NSAIDs) అనే ఔషధాల సమూహానికి చెందినది. ఇది కలయికలు మరియు మస్సులపై ప్రభావం చూపించే పరిస్థితుల్లో నొప్పి, సూక్ష్మ ఇన్ఫ్లమేషన్, మరియు శ్లేష్మం యొక్క తాత్కాలిక నివారణకు ఉపయోగిస్తారు. ఇది మనకు నొప్పి ఉందని చెప్పే రసాయన సందేశకాలను ఆగివేయడం ద్వారా పనిచేస్తుంది. ఇది రూమటాయిడ్ ఆర్థరైటిస్ మరియు ఆస్టియోఆర్థరైటిస్ వంటి పరిస్థితుల్లో నొప్పిని తగ్గించడంలో సహాయపడుతుంది.</p>
+    <!-- చిత్రం కరౌసెల్ -->
+
+    <div class="image-gallery">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="logo1.jpg" alt="Cough Syrup Bottle 1" class="carousel-img">
+                <img src="logo2.jpg" alt="Cough Syrup Bottle 2" class="carousel-img">
+                <img src="logo3.jpg" alt="Cough Syrup Bottle 3" class="carousel-img">
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+        </div>
+    </div>
+</section>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+let currentIndex = 0;
+
+// Move to the next slide
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+// Move to the previous slide
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+</script>
+    
+
+<section id="how-to-use-reactin">
+    <h2>రిఅక్టిన్ టాబ్లెట్ PR ను ఎలా ఉపయోగించాలి</h2>
+    <ul>
+        <li><strong>మోతాదు:</strong> మీ ఆరోగ్య సంరక్షణ ప్రదాత పేర్కొన్న విధంగా రియాక్టిన్ టాబ్లెట్ PR ను ఖచ్చితంగా తీసుకోండి. సూచించిన మోతాదులో ఎక్కువగా తీసుకోకండి.</li>
+        <li>సర్వ సాధారణంగా లాభం పొందడానికి, ఈ ఔషధాన్ని ప్రతి రోజూ ఒకే సమయంలో రెగ్యులర్‌గా తీసుకోండి. అవసరం కంటే ఎక్కువగా లేదా ఎక్కువ కాలం ఉపయోగించకండి, ఇది ప్రమాదకరం కావచ్చు.</li>
+        <li>అన్నింటిలో తక్కువ ప్రభావవంతమైన మోతాదును కచ్చితమైన సమయానికి తీసుకోవాలని సాధారణంగా సూచించబడింది.</li>
+        <li>ఊపిరితిత్తులు తిరిగి పడ్డ కాకుండా ఉండేందుకు, రియాక్టిన్ టాబ్లెట్ PR ను ఆహారం లేదా పాలు తీసుకోండి.</li>
+    </ul>
+</section>
+
+
+<section id="precautions">
+    <h2>చర్యలు</h2>
+    <ul>
+        <li>రిఅక్టిన్ 100 SR టాబ్లెట్ ను ఆస్మా మరియు హృద్రోగ రక్తస్రావం ఉన్న రోగులకు జాగ్రత్తగా ఉపయోగించాలి.</li>
+        <li>ఈ ఔషధం కారోనరీ ఆర్టరీ బైపాస్ గ్రాఫ్ట్ (CABG) శస్త్రచికిత్స సమయంలో పరియోపరేటివ్ నొప్పి చికిత్సకు వ్యతిరేకంగా ఉంది.</li>
+        <li>గర్భవతి మరియు దక్షిణంలో ఉన్న మహిళలు ఈ ఔషధాన్ని ఉపయోగించడానికి ముందు తమ డాక్టర్లతో సంప్రదించాలి, ఇది అభివృద్ధి చెందుతున్న బాబుకు హానికరమైన ప్రభావాలను కలిగించవచ్చు.</li>
+    </ul>
+</section>
+
+<section id="common-side-effects">
+    <h1>సాధారణ దుష్ప్రభావాలు</h1>
+    <div class="effects-grid">
+        <div class="effect-card">
+            <img src="1side.jpg" alt="వాంతులు మరియు మలబద్ధకం" class="effect-img">
+            <p>వాంతులు మరియు మలబద్ధకం</p>
+        </div>
+        <div class="effect-card">
+            <img src="2side.jpg" alt="అతిసారం" class="effect-img">
+            <p>అతిసారం</p>
+        </div>
+        <div class="effect-card">
+            <img src="3side.jpg" alt="ఏదో నొప్పి" class="effect-img">
+            <p>ఏదో నొప్పి</p>
+        </div>
+        <div class="effect-card">
+            <img src="4side.jpg" alt="అజీర్ణం" class="effect-img">
+            <p>అజీర్ణం</p>
+        </div>
+        <div class="effect-card">
+            <img src="5side.jpg" alt="గ్యాస్" class="effect-img">
+            <p>గ్యాస్</p>
+        </div>
+        <div class="effect-card">
+            <img src="6side.jpg" alt="తలబొప్పులు" class="effect-img">
+            <p>తలబొప్పులు</p>
+        </div>
+        <div class="effect-card">
+            <img src="7side.jpg" alt="చలనం" class="effect-img">
+            <p>చలనం</p>
+        </div>
+        <div class="effect-card">
+            <img src="8side.jpg" alt="ఆహారం కొరత" class="effect-img">
+            <p>ఆహారం కొరత</p>
+        </div>
+        <div class="effect-card">
+            <img src="9side.jpg" alt="వర్టిగో" class="effect-img">
+            <p>వర్టిగో</p>
+        </div>
+        <div class="effect-card">
+            <img src="10side.jpg" alt="రాష్" class="effect-img">
+            <p>రాష్</p>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="safety-advice">
+        <h1>సురక్షిత సూచనలు</h1>
+        <div class="safety-grid">
+            <!-- మద్యం సూచన -->
+            <div class="safety-card">
+                <img src="safe1.jpg" alt="Alcohol Warning" class="safety-img">
+                <div class="safety-info">
+                    <h2>మద్యం</h2>
+                    <p>రియాక్టిన్ 100 SR టాబ్లెట్ తో మద్యం తీసుకోవడం సురక్షితం కాదు.</p>
+                </div>
+            </div>
+    
+            <!-- గర్భధారణ సూచన -->
+            <div class="safety-card">
+                <img src="safe2.jpg" alt="Pregnancy Warning" class="safety-img">
+                <div class="safety-info">
+                    <h2>గర్భధారణ</h2>
+                    <p>మీరు గర్భవతి అయితే రియాక్టిన్ 100 SR టాబ్లెట్ తీసుకోవడానికి ముందు మీ డాక్టర్ ను సంప్రదించండి.</p>
+                </div>
+            </div>
+            
+            <!-- అదనపు సురక్షిత సూచన కార్డులు ఇక్కడ జోడించవచ్చు -->
+        </div>
+    </section>
+    
+    <section id="safety-advice">
+        <div class="advice-grid">
+            <div class="advice-card">
+                <img src="breast.jpg" alt="గర్భధారణ భద్రత" class="advice-img">
+                <h2>మీ డాక్టర్ను సంప్రదించండి</h2>
+                <h3>శిశువుకు తగినది</h3>
+                <p>రియాక్టిన్ 100 SR టాబ్లెట్ గర్భధారణ సమయంలో ఉపయోగించడం సురక్షితంగా లేదు, ఎందుకంటే అభివృద్ధి చెందుతున్న బిడ్డకు ప్రమాదం ఉండటానికి ఖచ్చితమైన ఆధారాలు ఉన్నాయి. అయితే, కొన్నిసార్లు జీవితానికి ముప్పు కలిగించే పరిస్థితుల్లో ప్రయోజనాలు ప్రమాదాలను అధిగమించినప్పుడు డాక్టర్ ఇది prescribe చేయవచ్చు. దయచేసి మీ డాక్టర్ను సంప్రదించండి.</p>
+            </div>
+    
+            <div class="advice-card">
+                <img src="driving.jpg" alt="ఐడ్రైవింగ్ భద్రత" class="advice-img">
+                <h3>డ్రైవింగ్</h3>
+                <h2>సురక్షితంగా కాదు</h2>
+                <p>రియాక్టిన్ 100 SR టాబ్లెట్ మీ డ్రైవింగ్ సామర్థ్యాన్ని ప్రభావితం చేసే దుష్ప్రభావాలను కలిగించగలదు. ఇది కొంత మందిలో తలనొప్పి, పఠనములో ధృవీకరణ, తలచుక్కలు లేదా నిద్ర లభ్యం చేయవచ్చు. ఇది మీ డ్రైవింగ్ సామర్థ్యాన్ని ప్రభావితం చేయవచ్చు.</p>
+            </div>
+    
+            <div class="advice-card">
+                <img src="kidney.jpg" alt="గుడ్డు భద్రత" class="advice-img">
+                <h3>గుడ్డులు</h3>
+                <h2>సురక్షితంగా కాదు</h2>
+                <p>రియాక్టిన్ 100 SR టాబ్లెట్ గుడ్డు వ్యాధి ఉన్న రోగుల వద్ద జాగ్రత్తగా ఉపయోగించాలి. రియాక్టిన్ 100 SR టాబ్లెట్ యొక్క మోతాదు సమన్వయమవ్వవచ్చు. దయచేసి మీ డాక్టర్ను సంప్రదించండి.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="what-to-do">
+        <h1>ఏం చేయాలి</h1>
+        <ul>
+            <li>మీకు హృదయ వ్యాధి లేదా ముక్కు ప్రమాదం ఉందా అంటే మీ డాక్టర్ను తెలియజేయండి.</li>
+            <li>గర్భవతి మరియు పాలిచ్చే మహిళలు ఈ ఔషధాన్ని ఉపయోగించడానికి ముందు మీ డాక్టర్ను సంప్రదించాలి.</li>
+            <li>మీకు కాలేయం లేదా కిడ్నీ వ్యాధి ఉందా అంటే, గర్భవతిగా ఉన్నారా లేదా పాలిచ్చుతున్నారా అంటే మీ డాక్టర్ను తెలియజేయండి.</li>
+            <li>మీరు రియాక్టిన్ 100 SR టాబ్లెట్ యొక్క ఒక మోతాదు తీసుకోవడంలో విస్మరించడానికి, దాన్ని వీలైనంత త్వరగా తీసుకోండి. అయితే, మీ తదుపరి మోతాదుకు సమయం సమీపంలో ఉంటే, విస్మరించిన మోతాదును వదిలేయండి మరియు మీ సాధారణ షెడ్యూల్‌కు తిరిగి వెళ్లండి.</li>
+            <li>ఇది తలనొప్పులు, నిద్ర, లేదా దృష్టి సంబంధిత సమస్యలు కలిగించవచ్చు. డ్రైవింగ్ చేస్తున్నప్పుడు లేదా ఏదైనా శ్రద్ధ అవసరం ఉన్నప్పుడు జాగ్రత్తగా ఉండండి.</li>
+            <li>సాధారణ దుష్ప్రభావాలు కొనసాగితే లేదా మీరు వారి గురించి చింతిస్తున్నట్లయితే, మీ డాక్టర్ను సంప్రదించండి.</li>
+        </ul>
+    </section>
+    
+    
+    <section id="what-not-to-do">
+        <h1>ఏం చేయకూడదు</h1>
+        <ul>
+            <li>అవసరమైతే ఎక్కువ లేదా ఎక్కువ కాలం తీసుకోకండి, ఎందుకంటే ఇది ప్రమాదకరంగా ఉండవచ్చు.</li>
+            <li>మీరు ఒక మోతాదు తీసుకోవడాన్ని మర్చిపోయి ఉంటే, మోతాదును డబుల్ చేయవద్దు.</li>
+            <li>రియాక్టిన్ 100 SR టాబ్లెట్ తీసుకుంటున్నప్పుడు మద్యం సేవించవద్దు, ఎందుకంటే ఇది అధిక నిద్ర మరియు కడుపు సమస్యల ప్రమాదాన్ని పెంచవచ్చు.</li>
+        </ul>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Yashodip More - NonCSCoder. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript for scroll animations
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+    </script>
+
+</body>
+</html>
